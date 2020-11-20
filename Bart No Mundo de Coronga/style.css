@@ -1,0 +1,47 @@
+.titulo-jogo {
+    color: blanchedalmond;
+}
+
+.corpo {
+    background-color: black;
+}
+
+.titulo-jogo {
+    text-align: center;
+}
+
+.div-principal {
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+
+.interacao {
+    padding: 5px;
+}
+
+.imagem {
+    background-color: #FF7379;
+}
+
+.interacao {
+    background-color: #E88374;
+    
+}
+
+.resposta {
+    display: flex;
+    justify-content: center;
+    background-color: #F5A76E;
+    padding: 10px;
+    
+}
+
+
+.imagemdocenario {
+    width: 30%;
+    height: 5%;
+    position: center;
+    padding: 20px;
+}

@@ -1,0 +1,59 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+body header img {
+    width: 200px;
+}
+
+nav a {
+    padding: 7px;
+}
+
+.envolve-logo-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+    
+}
+
+main .container-principal .filmes .capa-filme img{
+    width: 200px;
+    height: 250px;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+}
+
+.sessao-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.sessao-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.sessao-1 .capa-filme {
+    padding-right: 10px;
+}
+
+.sessao-2 .capa-filme {
+    padding-right: 10px;
+}

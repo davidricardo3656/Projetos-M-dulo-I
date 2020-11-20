@@ -1,0 +1,90 @@
+
+<meta charset="UTF-8">
+
+        <h2>Descriptografe seu código aqui:</h2>
+        <input/>
+        <button>Descriptografe</button> 
+
+    <script>
+
+        alert("DIGITE A MENSAGEM QUE SERÁ CODIFICADA!!!")
+        
+        var mensagem = prompt("")
+
+        alert("DIGITE O VALOR DO DESLOCAMENTO!!!")
+        var deslocamento = prompt();
+
+        function cifraCesarCodifica(mensagem, deslocamento) {
+
+            array = [];
+
+            array = mensagem.split("");
+
+            var novaArray = [];
+
+            for(i = 0; i < array.length; i++){
+                var cadaValor = array[i];
+                novaArray.push(cadaValor.charCodeAt(0));
+            }
+
+            novaArray;
+
+            novaArrayComDeslocamento = [];
+
+            for(i = 0; i < novaArray.length; i++){
+            var cadaValor = novaArray[i];
+            novaArrayComDeslocamento.push(cadaValor + Number(deslocamento));
+            }
+
+            novaArrayComDeslocamento;
+
+            document.write("<h2>Esta é a sua mensagem criptografada com o deslocamento: " + deslocamento + "</h2>" + novaArrayComDeslocamento + " <br>");
+
+            return novaArrayComDeslocamento;
+            return deslocamento;
+        }                  
+
+
+        
+        cifraCesarCodifica(mensagem, deslocamento);
+
+        function cifraCesarDescodifica () {
+        
+        var input = document.querySelector("input"); 
+
+        var mensagemCodificada = [input.value];
+
+        mensagemCodificada = (input.value).split(",").map(Number);
+
+        var mensagemDescodificadaComDeslocamento = [];
+
+        for (i = 0; i < mensagemCodificada.length; i++){
+            var elemento = mensagemCodificada[i];
+            mensagemDescodificadaComDeslocamento.push(String.fromCharCode(elemento));
+        }
+
+        document.write("<h2>Esta é a sua mensagem criptografada com o deslocamento: " + deslocamento + "</h2>" + novaArrayComDeslocamento + " <br>");
+
+        document.write("<h2>Está é a sua mensagem descriptografada com o deslocamento: </h2> " + "<br>" + mensagemDescodificadaComDeslocamento);
+
+        var mensagemDescodificadaSemDeslocamento = [];
+        Number(deslocamento)
+        
+        for (i = 0; i < mensagemCodificada.length; i++){
+            var elemento = mensagemCodificada[i];
+            elemento = elemento - deslocamento;
+            mensagemDescodificadaSemDeslocamento.push(String.fromCharCode(elemento));
+        }
+
+        document.write("<h2>Está é a sua mensagem descriptografada sem o deslocamento: </h2> " + "<br>" + mensagemDescodificadaSemDeslocamento);
+        
+        }
+
+        var button = document.querySelector("button");
+
+        button.onclick = cifraCesarDescodifica;
+
+        
+    
+    </script>
+
